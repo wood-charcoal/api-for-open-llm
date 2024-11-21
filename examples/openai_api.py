@@ -7,7 +7,7 @@ from fastapi.security.http import HTTPAuthorizationCredentials, HTTPBearer
 from openai import AsyncOpenAI
 from sse_starlette import EventSourceResponse
 
-from api.utils.protocol import ChatCompletionCreateParams, CompletionCreateParams, EmbeddingCreateParams
+from api.protocol import ChatCompletionCreateParams, CompletionCreateParams, EmbeddingCreateParams
 
 app = FastAPI()
 app.add_middleware(
